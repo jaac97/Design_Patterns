@@ -48,5 +48,24 @@ p {
 }
 
 
-
 /** CODIGO AQUI **/
+
+@media (min-width: 480px) {
+    .column-drop {
+        display: grid;
+        grid-template-areas: "izquierda derecha" "main main";
+        gap: 2rem;
+    }
+    .side2 {
+        grid-area: main;
+    }
+}
+
+@media (min-width: 768px) {
+    .column-drop {
+        grid-template-areas: "izquierda main derecha";
+    }
+    .side2 {
+        grid-area: derecha;
+    }
+}
